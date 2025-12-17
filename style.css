@@ -1,0 +1,191 @@
+*{
+  margin : 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background: #080808;
+  color: #fff;
+}
+
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.container{
+  padding: 10px 10%;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: 140px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+.header-text{
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.header-text h1{
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.header-text h1 span{
+  color: #ff004f;
+}
+
+/* ------------------About Page------------------ */
+
+#about {
+    color: #ababab;
+}
+
+.row {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 95%;
+    border-radius: 15px;
+    filter: opacity(80%);
+    animation: fade 0.5s;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.about-col-2 p {
+    line-height: 25px;
+}
+
+.tab-titles{
+    animation: fade 0.5s;
+}
+
+.description {
+    margin: 15px 0;
+    animation: fade 1s;
+}
+
+.sub-title {
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 12px;
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}
+
+.tab-titles {
+    display: flex;
+    margin: 35px 0 35px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.tab-links:hover {
+    font-size: 19px;
+    transition: 0.2s;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 15px 0;
+    animation: fade 0.5s;
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 14px;
+    line-height: 30px;
+    animation: fade 0.5s;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
