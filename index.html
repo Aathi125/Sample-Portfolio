@@ -14,18 +14,18 @@
       <nav>
         <img src="images/logo.png" class="logo">
         <ul id="sidemenu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
           <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
         </ul>
         <i class="fa-solid fa-list" onclick="openmenu()"></i>
 
       </nav>
       <div class="header-text">
-        <p>UI/UX</p>
+        <p>Software Engineering Undergraduate</p>
         <h1>Hi, I'm <span>Aathika</span><br> from Sri Lanka</h1>
       </div>
     </div>
@@ -159,6 +159,7 @@
                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                 <button type="submit" class="btn btn2">Submit</button>
             </form>
+            <span id="msg"></span>
         </div>
       </div>
     </div>
@@ -184,7 +185,7 @@
   </script>
   <!--for contact form-->
   <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwh8aYThAEGaRF9ld5neOseJ10NzYcefyaGLo4kNPKAdMFmIThsL0hZc-9o8hULc8QN/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyAyv3U_RwFZqU5-M9ehiSxO3XFZ_nHPqM-n4Jp2RNZPJi_eorwp-ynZJ07QnFor_Xb/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
       
