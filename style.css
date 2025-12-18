@@ -453,4 +453,25 @@ nav .fas{
   nav .fas{
     display: block; /*for appear*/
   }
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
 }
