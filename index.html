@@ -13,15 +13,15 @@
     <div class="container">
       <nav>
         <img src="images/logo.png" class="logo">
-        <ul>
+        <ul id="sidemenu">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
-          <i class="fa-solid fa-circle-xmark"></i>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
         </ul>
-        <i class="fa-solid fa-list"></i>
+        <i class="fa-solid fa-list" onclick="openmenu()"></i>
 
       </nav>
       <div class="header-text">
@@ -31,7 +31,7 @@
     </div>
   </div>
 
- 
+ <!--About section-->
   <div id="about">
     <div class="container">
       <div class="row">
@@ -182,5 +182,24 @@
           document.getElementById(tabname).classList.add("active-tab");
       }
   </script>
+  <!--for contact form-->
+  <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwh8aYThAEGaRF9ld5neOseJ10NzYcefyaGLo4kNPKAdMFmIThsL0hZc-9o8hULc8QN/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
   </body>
 </html>
