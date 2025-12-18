@@ -6,7 +6,7 @@ Always curious about full stack development, system design, and problem solving
 </p>
 
 ---
-![Profile Image](assets/home.png)
+![Website Image](assets/Home.png)
 
 
 ## 👨‍💻 About Me
