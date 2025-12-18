@@ -437,7 +437,7 @@ form .btn2 {
 
 /* -------------------css for smaller screens-------*/
 nav .fas{
-  display: none;
+  display: none; /*for disappear the menu icon in big screen(desktop)*/
 }
 @media only screen and(max-width:600px){
   #header{
@@ -451,6 +451,6 @@ nav .fas{
     font-size: 30px;
   }
   nav .fas{
-    display: block;
+    display: block; /*for appear*/
   }
 }
