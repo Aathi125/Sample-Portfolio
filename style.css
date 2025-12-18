@@ -6,9 +6,8 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-
-::-webkit-scrollbar {
-    display: none;
+html{
+  scroll-behavior: smooth;
 }
 
 body {
@@ -475,7 +474,7 @@ form .btn2 {
 
 /* ------------------Mobile Responsive------------------ */
 
-nav .fas {
+nav .fa-solid {
     display: none;
 }
 
@@ -494,7 +493,7 @@ nav .fas {
         font-size: 30px;
     }
 
-    nav .fas {
+    nav .fa-solid {
         display: block;
         font-size: 25px;
     }
@@ -516,7 +515,7 @@ nav .fas {
         margin: 25px;
     }
 
-    nav ul .fas {
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
@@ -793,7 +792,7 @@ nav .fas {
         font-size: 30px;
     }
 
-    nav .fas {
+    nav .fa-solid {
         display: block;
         font-size: 25px;
     }
@@ -815,7 +814,7 @@ nav .fas {
         margin: 25px;
     }
 
-    nav ul .fas {
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
@@ -884,4 +883,14 @@ nav .fas {
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 26px 0;
+  background: #262626;
+  font-weight: 300;
+}
+.copyright i{
+  color: #ff004f;
 }
