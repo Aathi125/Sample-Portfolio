@@ -6,6 +6,8 @@ Always curious about full stack development, system design, and problem solving
 </p>
 
 ---
+![Website Image](assets/Home.png)
+
 
 ## 👨‍💻 About Me
 - 💻 Software Engineer Intern @IT Starter Pvt Ltd
